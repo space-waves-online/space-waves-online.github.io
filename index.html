@@ -1051,10 +1051,63 @@
 
  
             
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Follow Our TikTok</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        padding-bottom: 50px; /* Add padding to the bottom */
+    }
 
+    .container {
+        /* height: 2000px; */ /* Remove fixed height */
+    }
+
+    .follow-tiktok {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #f9526b;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+        z-index: 9999;
+        transition: opacity 0.3s ease;
+    }
+
+    .hide {
+        opacity: 0;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <!-- Your content here -->
+</div>
 <a href="https://www.tiktok.com/@evanclubmain" class="follow-tiktok" id="follow-tiktok" target="_blank">Follow our TikTok</a>
 
+<script>
+    window.onscroll = function() {scrollFunction()};
 
+    function scrollFunction() {
+        var tiktokLink = document.getElementById("follow-tiktok");
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            tiktokLink.classList.add('hide');
+        } else {
+            tiktokLink.classList.remove('hide');
+        }
+    }
+</script>
+</body>
+</html>
 
 
 
