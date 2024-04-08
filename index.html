@@ -1149,3 +1149,39 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    function searchGames() {
+      var input, filter, flexContainer, flexItem, a, i, txtValue;
+      input = document.getElementById('searchInput');
+      filter = input.value.toUpperCase();
+      flexContainer = document.getElementsByClassName('flex-container')[0];
+      flexItem = flexContainer.getElementsByClassName('flex-item');
+
+      for (i = 0; i < flexItem.length; i++) {
+        a = flexItem[i];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          flexItem[i].style.display = '';
+        } else {
+          flexItem[i].style.display = 'none';
+        }
+      }
+    }
+
+    // Call searchGames function when user types in the search input
+    document.getElementById('searchInput').addEventListener('input', searchGames);
+  });
+</script>
