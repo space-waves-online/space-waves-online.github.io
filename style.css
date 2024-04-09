@@ -7,28 +7,29 @@
 
 /* Basic styling */
 body {
-  font-family: Arial, sans-serif; /* Changed font to Arial */
-  line-height: 1.8; /* Increased line height for better readability */
-  background-color: lavender; /* Changed background color to a lighter shade */
-  color: #333; /* Changed text color to a darker shade */
-  font-size: 18px; /* Increased base font size for better readability */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern sans-serif font */
+  line-height: 1.6;
+  background-color: #f9f9f9; /* Light background */
+  color: #333;
+  font-size: 16px;
 }
 
 .container {
-  width: 90%; /* Slightly narrower container */
+  width: 90%;
   margin: 0 auto;
-  max-width: 1200px; /* Kept maximum width */
+  max-width: 1200px;
 }
 
 /* Header styling */
 header {
-  background-color: #2ecc71; /* Green header */
+  background-color: #4CAF50; /* Green header */
   color: #fff;
-  padding: 20px 0; /* Decreased padding for a slimmer header */
+  padding: 20px 0;
+  text-align: center; /* Centered header content */
 }
 
 h1 {
-  font-size: 2.5em; /* Reduced heading size */
+  font-size: 2.5em;
   margin-bottom: 20px;
 }
 
@@ -46,27 +47,27 @@ h1 {
 }
 
 .search-bar input {
-  padding: 10px;
-  border: 2px solid #2ecc71; /* Green border */
-  border-radius: 5px;
+  padding: 12px;
+  border: 2px solid #4CAF50; /* Green border */
+  border-radius: 25px; /* Rounded border */
   font-size: 16px;
-  width: 60%;
+  width: 80%; /* Wider input */
   max-width: 400px;
 }
 
 .search-bar button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   cursor: pointer;
-  background-color: #2ecc71; /* Green button */
+  background-color: #4CAF50; /* Green button */
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px; /* Rounded border */
   font-size: 16px;
   transition: background 0.3s ease-in-out;
 }
 
 .search-bar button:hover {
-  background-color: #27ae60; /* Darker green on hover */
+  background-color: #45a049; /* Darker green on hover */
 }
 
 /* Flex container styling */
@@ -74,32 +75,31 @@ h1 {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Better distribution of items */
+  justify-content: center; /* Center items */
 }
 
 /* Flex item styling */
 .flex-item {
   margin: 20px;
-  width: 200px; /* Fixed width for square shape */
-  height: 200px; /* Fixed height for square shape */
+  width: 200px;
+  height: 200px;
   background-color: #fff;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .flex-item:hover {
-  transform: scale(1.1); /* Expand on hover */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2); /* Lighter shadow on hover with extra edge shadow */
-  background: linear-gradient(45deg, #ff00ff, #00ffff); /* Gradient background on hover */
+  transform: scale(1.05); /* Slightly expand on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Lighter shadow on hover */
 }
 
 /* Footer styling */
 footer {
-  background-color: #34495e; /* Dark blue footer */
+  background-color: #333; /* Dark footer */
   color: #fff;
-  padding: 15px 0; /* Decreased padding for slimmer footer */
+  padding: 15px 0;
   text-align: center;
 }
 
@@ -108,52 +108,37 @@ footer {
   position: fixed;
   top: 20px;
   right: 20px;
-  background-color: #2ecc71; /* Green button */
-  color: white;
-  padding: 15px;
+  background-color: #4CAF50; /* Green button */
+  color: #fff;
+  padding: 15px 30px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 25px; /* Rounded border */
   transition: background 0.3s ease-in-out;
 }
 
 .home-button:hover {
-  background-color: #27ae60; /* Darker green on hover */
+  background-color: #45a049; /* Darker green on hover */
 }
 
-
-
-
-
-
-
-
-
+/* About section styling */
 #about {
-    text-align: right;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .custom-link {
-    display: inline-block;
-    padding: 8px 12px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    margin: 5px;
-    font-size: 14px;
-    transition: background-color 0.3s;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue link */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px; /* Rounded border */
+  margin: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s;
 }
 
 .custom-link:hover {
-    background-color: #0056b3;
+  background-color: #0056b3; /* Darker blue on hover */
 }
-
-
-
-
-
-
-
-
-
