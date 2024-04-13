@@ -116,22 +116,45 @@
 
 
     <!DOCTYPE html>
-    <html>
+    <html lang="en">
     <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Apps Button</title>
       <style>
-        .apps-link {
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+        }
+        .apps-button {
           position: absolute;
-          top: 10px;
-          right: 10px;
-          cursor: pointer;
+          top: 20px;
+          right: 20px;
+          background-color: #007bff;
+          color: #fff;
+          padding: 10px 20px;
+          border-radius: 5px;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+        }
+        .apps-button:hover {
+          background-color: #0056b3;
+        }
+        /* Additional Styles to push content down */
+        .content {
+          margin-top: 50px; /* Adjust as needed */
         }
       </style>
     </head>
     <body>
-      <a class="apps-link" href="apps.html">Apps</a>
+      <a class="apps-button" href="apps.html">Apps</a>
+      <div class="content">
+        <!-- Your website content here -->
+        <!-- Add your content here -->
+      </div>
     </body>
     </html>
-
 
 
 
