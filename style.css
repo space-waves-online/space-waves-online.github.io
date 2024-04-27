@@ -7,10 +7,10 @@
 
 /* Basic styling */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern sans-serif font */
+  font-family: 'Montserrat', sans-serif; /* Modern sans-serif font */
   line-height: 1.6;
-  background-color: #f9f9f9; /* Light background */
-  color: #333;
+  background-color: #f0f0f0; /* Light background */
+  color: #333; /* Dark text */
   font-size: 16px;
 }
 
@@ -22,21 +22,22 @@ body {
 
 /* Header styling */
 header {
-  background-color: #4CAF50; /* Green header */
-  color: #fff;
+  background-color: #2ecc71; /* Vibrant green header */
+  color: #fff; /* White text */
   padding: 20px 0;
   text-align: center; /* Centered header content */
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3em; /* Larger header font size */
   margin-bottom: 20px;
+  font-family: 'Pacifico', cursive; /* Playful script font */
 }
 
 /* Welcome text styling */
 .welcome-text {
   margin-top: 20px;
-  font-size: 24px;
+  font-size: 28px; /* Larger font size */
   font-weight: bold;
 }
 
@@ -48,18 +49,20 @@ h1 {
 
 .search-bar input {
   padding: 12px;
-  border: 2px solid #4CAF50; /* Green border */
+  border: 2px solid #2ecc71; /* Vibrant green border */
   border-radius: 25px; /* Rounded border */
   font-size: 16px;
   width: 80%; /* Wider input */
   max-width: 400px;
+  background-color: #fff; /* White input background */
+  color: #333; /* Dark text */
 }
 
 .search-bar button {
   padding: 12px 24px;
   cursor: pointer;
-  background-color: #4CAF50; /* Green button */
-  color: #fff;
+  background-color: #3498db; /* Bright blue button */
+  color: #fff; /* White text */
   border: none;
   border-radius: 25px; /* Rounded border */
   font-size: 16px;
@@ -67,7 +70,7 @@ h1 {
 }
 
 .search-bar button:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #2980b9; /* Darker blue on hover */
 }
 
 /* Flex container styling */
@@ -83,22 +86,22 @@ h1 {
   margin: 20px;
   width: 200px;
   height: 200px;
-  background-color: #fff;
+  background-color: #3498db; /* Bright blue background for flex items */
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .flex-item:hover {
   transform: scale(1.05); /* Slightly expand on hover */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Lighter shadow on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Lighter shadow on hover */
 }
 
 /* Footer styling */
 footer {
   background-color: #333; /* Dark footer */
-  color: #fff;
+  color: #fff; /* White text */
   padding: 15px 0;
   text-align: center;
 }
@@ -108,8 +111,8 @@ footer {
   position: fixed;
   top: 20px;
   right: 20px;
-  background-color: #4CAF50; /* Green button */
-  color: #fff;
+  background-color: #3498db; /* Bright blue button */
+  color: #fff; /* White text */
   padding: 15px 30px;
   border: none;
   cursor: pointer;
@@ -118,7 +121,7 @@ footer {
 }
 
 .home-button:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #2980b9; /* Darker blue on hover */
 }
 
 /* About section styling */
@@ -130,8 +133,8 @@ footer {
 .custom-link {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff; /* Blue link */
-  color: #fff;
+  background-color: #e74c3c; /* Bright red link */
+  color: #fff; /* White text */
   text-decoration: none;
   border-radius: 25px; /* Rounded border */
   margin: 10px;
@@ -140,15 +143,5 @@ footer {
 }
 
 .custom-link:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #c0392b; /* Darker red on hover */
 }
-
-
-
-
-
-
-
-
-
-
