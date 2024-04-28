@@ -145,3 +145,13 @@ footer {
 .custom-link:hover {
   background-color: #c0392b; /* Darker red on hover */
 }
+
+
+
+
+
+/* Gradient background for the entire page */
+body {
+  background: linear-gradient(to right, #ADD8E6, #DDA0DD); /* Light blue to light purple gradient */
+}
+
