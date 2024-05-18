@@ -66,11 +66,12 @@ h1 {
   border: none;
   border-radius: 25px; /* Rounded border */
   font-size: 16px;
-  transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .search-bar button:hover {
   background-color: #2980b9; /* Darker blue on hover */
+  transform: scale(1.1); /* Slightly expand on hover */
 }
 
 /* Flex container styling */
@@ -94,7 +95,7 @@ h1 {
 }
 
 .flex-item:hover {
-  transform: scale(1.05); /* Slightly expand on hover */
+  transform: scale(1.1); /* Slightly expand on hover */
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Lighter shadow on hover */
 }
 
@@ -117,11 +118,12 @@ footer {
   border: none;
   cursor: pointer;
   border-radius: 25px; /* Rounded border */
-  transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .home-button:hover {
   background-color: #2980b9; /* Darker blue on hover */
+  transform: scale(1.1); /* Slightly expand on hover */
 }
 
 /* About section styling */
@@ -139,16 +141,13 @@ footer {
   border-radius: 25px; /* Rounded border */
   margin: 10px;
   font-size: 16px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
 }
 
 .custom-link:hover {
   background-color: #c0392b; /* Darker red on hover */
+  transform: scale(1.1); /* Slightly expand on hover */
 }
-
-
-
-
 
 /* Gradient background for the entire page */
 body {
