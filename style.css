@@ -7,10 +7,10 @@
 
 /* Basic styling */
 body {
-  font-family: 'Montserrat', sans-serif; /* Modern sans-serif font */
   line-height: 1.6;
-  background-color: #f0f0f0; /* Light background */
-  color: #333; /* Dark text */
+  background: linear-gradient(to right, #ADD8E6, #DDA0DD); /* Light blue to light purple gradient */
+  color: #333;
+  font-family: 'Montserrat', sans-serif; /* Modern sans-serif font */
   font-size: 16px;
 }
 
@@ -18,6 +18,9 @@ body {
   width: 90%;
   margin: 0 auto;
   max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Header styling */
@@ -26,6 +29,7 @@ header {
   color: #fff; /* White text */
   padding: 20px 0;
   text-align: center; /* Centered header content */
+  width: 100%;
 }
 
 h1 {
@@ -39,12 +43,16 @@ h1 {
   margin-top: 20px;
   font-size: 28px; /* Larger font size */
   font-weight: bold;
+  text-align: center;
 }
 
 /* Search bar styling */
 .search-bar {
   padding: 15px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .search-bar input {
@@ -78,8 +86,8 @@ h1 {
 .flex-container {
   margin-top: 30px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: center; /* Center items */
 }
 
 /* Flex item styling */
@@ -96,60 +104,4 @@ h1 {
 
 .flex-item:hover {
   transform: scale(1.1); /* Slightly expand on hover */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Lighter shadow on hover */
-}
-
-/* Footer styling */
-footer {
-  background-color: #333; /* Dark footer */
-  color: #fff; /* White text */
-  padding: 15px 0;
-  text-align: center;
-}
-
-/* Home button styling */
-.home-button {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: #3498db; /* Bright blue button */
-  color: #fff; /* White text */
-  padding: 15px 30px;
-  border: none;
-  cursor: pointer;
-  border-radius: 25px; /* Rounded border */
-  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.home-button:hover {
-  background-color: #2980b9; /* Darker blue on hover */
-  transform: scale(1.1); /* Slightly expand on hover */
-}
-
-/* About section styling */
-#about {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.custom-link {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #e74c3c; /* Bright red link */
-  color: #fff; /* White text */
-  text-decoration: none;
-  border-radius: 25px; /* Rounded border */
-  margin: 10px;
-  font-size: 16px;
-  transition: background-color 0.3s, transform 0.3s ease-in-out;
-}
-
-.custom-link:hover {
-  background-color: #c0392b; /* Darker red on hover */
-  transform: scale(1.1); /* Slightly expand on hover */
-}
-
-/* Gradient background for the entire page */
-body {
-  background: linear-gradient(to right, #ADD8E6, #DDA0DD); /* Light blue to light purple gradient */
-}
+  box-shadow: 0 8px 12px rgba(
