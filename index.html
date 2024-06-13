@@ -762,3 +762,144 @@
 
 
 
+<style>
+  .random-game {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: #ff6347;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+  }
+
+  .random-game:hover {
+      background-color: #ff4500;
+  }
+</style>
+
+<button class="random-game" onclick="randomGame()">Random Game</button>
+
+<script>
+  const gameUrls = [
+      '/1v1.lol.html',
+      '/bitlife.html',
+      '/amongus.html',
+      '/basketballstars.html',
+      '/basketballlegends.html',
+      '/geometrydash.html',
+      '/retrobowl.html',
+      '/littlealchemy.html',
+      '/chromedino.html',
+      '/craftmine.html',
+      '/asmallworldcup.html',
+      '/eggycar.html',
+      '/dogeminer.html',
+      '/motox3m.html',
+      '/motox3m2.html',
+      '/motox3m3.html',
+      '/ovo.html',
+      '/awesometanks.html',
+      '/awesometanks2.html',
+      '/flappybird.html',
+      '/bobtherobber.html',
+      '/paper.io2.html',
+      '/rabbitsamurai.html',
+      '/burritobison.html',
+      '/skyblock.html',
+      '/slope.html',
+      '/slope2.html',
+      '/snakeio.html',
+      '/spaceiskey.html',
+      '/subwaysurfers.html',
+      '/subwaysurfersny.html',
+      '/badicecream.html',
+      '/badicecream2.html',
+      '/badpiggies.html',
+      '/breakingthebank.html',
+      '/cubefield.html',
+      '/crossyroad.html',
+      '/cuttherope.html',
+      '/dealornodeal.html',
+      '/driftboss.html',
+      '/drivemad.html',
+      '/geometryrash.html',
+      '/golddigger.html',
+      '/helixjump.html',
+      '/hexgl.html',
+      '/hextris.html',
+      '/hillclimbracing2.html',
+      '/idlebreakout.html',
+      '/justfalllol.html',
+      '/knifehit.html',
+      '/mario.html',
+      '/ngon.html',
+      '/pacman.html',
+      '/rocketleague.html',
+      '/rooftopsnipers.html',
+      '/rooftopsnipers2.html',
+      '/skibiditoilet.html',
+      '/snowrider3d.html',
+      '/spacebarclicker.html',
+      '/spankthemonkey.html',
+      '/stack.html',
+      '/sprinter.html',
+      '/stealingthediamond.html',
+      '/stickmanhook.html',
+      '/tetris.html',
+      '/theimpossiblequiz.html',
+      '/tinyfishing.html',
+      '/cannonbasketball4.html',
+      '/2048cupcakes.html',
+      '/defendthetank.html',
+      '/bigredbutton.html',
+      '/googlesnake.html',
+      '/meme2048.html',
+      '/minigolfmaster.html',
+      '/paperplanes.html',
+      '/rollyvortex.html',
+      '/snowbattleio.html',
+      '/soundboard.html',
+      '/minecraft.html',
+      '/2048.html',
+      '/clickerheroes.html',
+      '/coreball.html',
+      '/dune.html',
+      '/dadish.html',
+      '/dadish2.html',
+      '/getawayshootout.html',
+      '/vex3.html',
+      '/vex4.html',
+      '/vex5.html',
+      '/vex6.html',
+      '/baldisbasics.html',
+      '/basketbros.html',
+      '/basketrandom.html',
+      '/btd4.html',
+      '/clusterrush.html',
+      '/colormatch.html',
+      '/drifthunters.html',
+      '/ducklife.html',
+      '/ducklife2.html',
+      '/ducklife3.html',
+      '/ducklife4.html',
+      '/edgenotfound.html',
+      '/letssurf.html',
+      '/mergeroundracers.html',
+      '/monkeymart.html',
+      '/tanukisunset.html',
+      '/tombofthemask.html',
+      '/towermaster.html',
+      '/particleclicker.html'
+  ];
+
+  function randomGame() {
+      const randomIndex = Math.floor(Math.random() * gameUrls.length);
+      window.location.href = gameUrls[randomIndex];
+  }
+</script>
