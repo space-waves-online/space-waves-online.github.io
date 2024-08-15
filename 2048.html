@@ -90,35 +90,41 @@
     }
 
     .ad-container {
-      width: 100%;
-      text-align: center;
-      margin-top: 10px;
-    }
-
-    .ad-container-bottom {
-      width: 100%;
-      text-align: center;
-      margin-bottom: 10px;
       position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .ad-container-side {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 160px; /* Adjust width as needed */
+      width: 160px; /* Width of side ads */
+      height: 100%; /* Height of side ads */
       text-align: center;
+      z-index: 2;
     }
 
-    .ad-container-left {
+    .ad-container.top {
+      width: 100%;
+      height: 90px; /* Height of top ad */
+      top: 0;
       left: 0;
+      right: 0;
+      margin: 0 auto;
     }
 
-    .ad-container-right {
+    .ad-container.bottom {
+      width: 100%;
+      height: 90px; /* Height of bottom ad */
+      bottom: 0;
+      left: 0;
       right: 0;
+      margin: 0 auto;
+    }
+
+    .ad-container.left {
+      left: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    .ad-container.right {
+      right: 0;
+      top: 0;
+      bottom: 0;
     }
   </style>
 </head>
@@ -130,95 +136,63 @@
     <button class="fullscreen-button" onclick="toggleFullScreen()">Fullscreen</button>
   </div>
 
-  <div class="ad-container">
+  <!-- Top Ad -->
+  <div class="ad-container top">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9835219927652942"
-      crossorigin="anonymous"></script>
+       crossorigin="anonymous"></script>
+    <!-- Horizontal Fixed -->
     <ins class="adsbygoogle"
-      style="display:block"
-      data-ad-client="ca-pub-9835219927652942"
-      data-ad-slot="<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9835219927652942"
-         crossorigin="anonymous"></script>
-      <!-- Horizontal Fixed -->
-      <ins class="adsbygoogle"
-         style="display:inline-block;width:728px;height:90px"
-         data-ad-client="ca-pub-9835219927652942"
-         data-ad-slot="6368022940"></ins>
-      <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>"
-      data-ad-format="auto"></ins>
+       style="display:inline-block;width:728px;height:90px"
+       data-ad-client="ca-pub-9835219927652942"
+       data-ad-slot="6368022940"></ins>
     <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
+       (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
   </div>
 
-  <div class="ad-container-side ad-container-left">
+  <!-- Bottom Ad -->
+  <div class="ad-container bottom">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9835219927652942"
-      crossorigin="anonymous"></script>
+       crossorigin="anonymous"></script>
+    <!-- Horizontal Fixed -->
     <ins class="adsbygoogle"
-      style="display:block"
-      data-ad-client="ca-pub-9835219927652942"
-      data-ad-slot="<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9835219927652942"
-         crossorigin="anonymous"></script>
-      <!-- Vertical Responsive -->
-      <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-9835219927652942"
-         data-ad-slot="2950456456"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-      <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>"
-      data-ad-format="auto"></ins>
+       style="display:inline-block;width:728px;height:90px"
+       data-ad-client="ca-pub-9835219927652942"
+       data-ad-slot="6368022940"></ins>
     <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
+       (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
   </div>
 
-  <div class="ad-container-side ad-container-right">
+  <!-- Left Ad -->
+  <div class="ad-container left">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9835219927652942"
-      crossorigin="anonymous"></script>
+       crossorigin="anonymous"></script>
+    <!-- Vertical Responsive -->
     <ins class="adsbygoogle"
-      style="display:block"
-      data-ad-client="ca-pub-9835219927652942"
-      data-ad-slot="<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9835219927652942"
-         crossorigin="anonymous"></script>
-      <!-- Vertical Responsive -->
-      <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-9835219927652942"
-         data-ad-slot="2950456456"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-      <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>"
-      data-ad-format="auto"></ins>
+       style="display:block"
+       data-ad-client="ca-pub-9835219927652942"
+       data-ad-slot="2950456456"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
     <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
+       (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
   </div>
 
-  <div class="ad-container-bottom">
+  <!-- Right Ad -->
+  <div class="ad-container right">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9835219927652942"
-      crossorigin="anonymous"></script>
+       crossorigin="anonymous"></script>
+    <!-- Vertical Responsive -->
     <ins class="adsbygoogle"
-      style="display:block"
-      data-ad-client="ca-pub-9835219927652942"
-      data-ad-slot="<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9835219927652942"
-         crossorigin="anonymous"></script>
-      <!-- Horizontal Fixed -->
-      <ins class="adsbygoogle"
-         style="display:inline-block;width:728px;height:90px"
-         data-ad-client="ca-pub-9835219927652942"
-         data-ad-slot="6368022940"></ins>
-      <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>"
-      data-ad-format="auto"></ins>
+       style="display:block"
+       data-ad-client="ca-pub-9835219927652942"
+       data-ad-slot="2950456456"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
     <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
+       (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
   </div>
 
