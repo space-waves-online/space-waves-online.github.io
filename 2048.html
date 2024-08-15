@@ -7,7 +7,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2048</title>
+  <title>1v1.LOL</title>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0ETD8FE1B"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -92,7 +92,7 @@
     .ad-container {
       width: 100%;
       text-align: center;
-      margin-top: 10px;
+      margin: 10px 0;
     }
 
     .ad-left, .ad-right {
@@ -111,10 +111,20 @@
       right: 0;
     }
 
-    .ad-top, .ad-bottom {
+    .ad-top {
+      position: absolute;
+      top: 0;
       width: 100%;
       text-align: center;
-      margin: 10px 0;
+      margin: 0;
+    }
+
+    .ad-bottom {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      margin: 0;
     }
   </style>
 </head>
@@ -135,7 +145,7 @@
   </div>
 
   <div class="content">
-    <iframe id="gameFrame" src="https://sciencemathlearning.github.io/2048.html/" onload="focusGame()"></iframe>
+    <iframe id="gameFrame" src="https://sciencemathlearning.github.io/1v1lol.html/" onload="focusGame()"></iframe>
     <button class="fullscreen-button" onclick="toggleFullScreen()">Fullscreen</button>
   </div>
 
