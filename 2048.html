@@ -4,7 +4,7 @@
 <head>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9835219927652942"
     crossorigin="anonymous"></script>
-  
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2048</title>
@@ -90,82 +90,56 @@
     }
 
     .ad-container {
-      position: absolute;
-      width: 160px; /* Width of side ads */
-      height: 100%; /* Height of side ads */
+      width: 100%;
       text-align: center;
-      z-index: 2;
+      margin-top: 10px;
     }
 
-    .ad-container.top {
+    .ad-left, .ad-right {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 120px; /* Adjust width as needed */
+      height: auto;
+    }
+
+    .ad-left {
+      left: 0;
+    }
+
+    .ad-right {
+      right: 0;
+    }
+
+    .ad-top, .ad-bottom {
       width: 100%;
-      height: 90px; /* Height of top ad */
-      top: 0;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-    }
-
-    .ad-container.bottom {
-      width: 100%;
-      height: 90px; /* Height of bottom ad */
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-    }
-
-    .ad-container.left {
-      left: 0;
-      top: 0;
-      bottom: 0;
-    }
-
-    .ad-container.right {
-      right: 0;
-      top: 0;
-      bottom: 0;
+      text-align: center;
+      margin: 10px 0;
     }
   </style>
 </head>
 
 <body>
 
+  <div class="ad-top">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9835219927652942"
+       crossorigin="anonymous"></script>
+    <!-- Horizontal Fixed -->
+    <ins class="adsbygoogle"
+       style="display:inline-block;width:728px;height:90px"
+       data-ad-client="ca-pub-9835219927652942"
+       data-ad-slot="6368022940"></ins>
+    <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
   <div class="content">
     <iframe id="gameFrame" src="https://sciencemathlearning.github.io/2048.html/" onload="focusGame()"></iframe>
     <button class="fullscreen-button" onclick="toggleFullScreen()">Fullscreen</button>
   </div>
 
-  <!-- Top Ad -->
-  <div class="ad-container top">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9835219927652942"
-       crossorigin="anonymous"></script>
-    <!-- Horizontal Fixed -->
-    <ins class="adsbygoogle"
-       style="display:inline-block;width:728px;height:90px"
-       data-ad-client="ca-pub-9835219927652942"
-       data-ad-slot="6368022940"></ins>
-    <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
-
-  <!-- Bottom Ad -->
-  <div class="ad-container bottom">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9835219927652942"
-       crossorigin="anonymous"></script>
-    <!-- Horizontal Fixed -->
-    <ins class="adsbygoogle"
-       style="display:inline-block;width:728px;height:90px"
-       data-ad-client="ca-pub-9835219927652942"
-       data-ad-slot="6368022940"></ins>
-    <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
-
-  <!-- Left Ad -->
-  <div class="ad-container left">
+  <div class="ad-left">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9835219927652942"
        crossorigin="anonymous"></script>
     <!-- Vertical Responsive -->
@@ -180,8 +154,7 @@
     </script>
   </div>
 
-  <!-- Right Ad -->
-  <div class="ad-container right">
+  <div class="ad-right">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9835219927652942"
        crossorigin="anonymous"></script>
     <!-- Vertical Responsive -->
@@ -191,6 +164,19 @@
        data-ad-slot="2950456456"
        data-ad-format="auto"
        data-full-width-responsive="true"></ins>
+    <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <div class="ad-bottom">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9835219927652942"
+       crossorigin="anonymous"></script>
+    <!-- Horizontal Fixed -->
+    <ins class="adsbygoogle"
+       style="display:inline-block;width:728px;height:90px"
+       data-ad-client="ca-pub-9835219927652942"
+       data-ad-slot="6368022940"></ins>
     <script>
        (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
