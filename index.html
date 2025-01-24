@@ -863,150 +863,34 @@
 
 
     <style>
-      .random-game {
-          position: absolute;
-          top: 20px;
-          right: 20px;
-          padding: 12px 24px;
-          background: linear-gradient(135deg, #6e8efb, #a777e3);
-          color: #fff;
-          text-transform: uppercase;
-          font-weight: bold;
-          font-family: 'Roboto', sans-serif;
-          cursor: pointer;
-          border: none;
-          border-radius: 25px;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          transition: background 0.3s, transform 0.2s;
-      }
+  .apps-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+      cursor: pointer;
+      border: none;
+      border-radius: 25px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s, transform 0.2s;
+  }
 
-      .random-game:hover {
-          background: linear-gradient(135deg, #a777e3, #6e8efb);
-          transform: translateY(-2px);
-      }
-    </style>
+  .apps-button:hover {
+      background: linear-gradient(135deg, #a777e3, #6e8efb);
+      transform: translateY(-2px);
+  }
+</style>
 
-    <button class="random-game" onclick="randomGame()">Random Game</button>
+<button class="apps-button" onclick="openAppsPage()">APPS</button>
 
-    <script>
-      const gameUrls = [
-          '/1v1.lol.html',
-          '/bitlife.html',
-          '/amongus.html',
-          '/basketballstars.html',
-          '/basketballlegends.html',
-          '/geometrydash.html',
-          '/retrobowl.html',
-          '/littlealchemy.html',
-          '/chromedino.html',
-          '/craftmine.html',
-          '/asmallworldcup.html',
-          '/eggycar.html',
-          '/dogeminer.html',
-          '/motox3m.html',
-          '/motox3m2.html',
-          '/motox3m3.html',
-          '/ovo.html',
-          '/awesometanks.html',
-          '/awesometanks2.html',
-          '/flappybird.html',
-          '/bobtherobber.html',
-          '/paper.io2.html',
-          '/rabbitsamurai.html',
-          '/burritobison.html',
-          '/skyblock.html',
-          '/slope.html',
-          '/slope2.html',
-          '/snakeio.html',
-          '/spaceiskey.html',
-          '/subwaysurfers.html',
-          '/subwaysurfersny.html',
-          '/badicecream.html',
-          '/badicecream2.html',
-          '/badpiggies.html',
-          '/breakingthebank.html',
-          '/cubefield.html',
-          '/crossyroad.html',
-          '/cuttherope.html',
-          '/dealornodeal.html',
-          '/driftboss.html',
-          '/drivemad.html',
-          '/geometryrash.html',
-          '/golddigger.html',
-          '/helixjump.html',
-          '/hexgl.html',
-          '/hextris.html',
-          '/hillclimbracing2.html',
-          '/idlebreakout.html',
-          '/justfalllol.html',
-          '/knifehit.html',
-          '/mario.html',
-          '/ngon.html',
-          '/pacman.html',
-          '/rocketleague.html',
-          '/rooftopsnipers.html',
-          '/rooftopsnipers2.html',
-          '/skibiditoilet.html',
-          '/snowrider3d.html',
-          '/spacebarclicker.html',
-          '/spankthemonkey.html',
-          '/stack.html',
-          '/sprinter.html',
-          '/stealingthediamond.html',
-          '/stickmanhook.html',
-          '/tetris.html',
-          '/theimpossiblequiz.html',
-          '/tinyfishing.html',
-          '/cannonbasketball4.html',
-          '/2048cupcakes.html',
-          '/defendthetank.html',
-          '/bigredbutton.html',
-          '/googlesnake.html',
-          '/meme2048.html',
-          '/minigolfmaster.html',
-          '/paperplanes.html',
-          '/rollyvortex.html',
-          '/snowbattleio.html',
-          '/soundboard.html',
-          '/minecraft.html',
-          '/2048.html',
-          '/clickerheroes.html',
-          '/coreball.html',
-          '/dune.html',
-          '/dadish.html',
-          '/dadish2.html',
-          '/getawayshootout.html',
-          '/vex3.html',
-          '/vex4.html',
-          '/vex5.html',
-          '/vex6.html',
-          '/baldisbasics.html',
-          '/basketbros.html',
-          '/basketrandom.html',
-          '/btd4.html',
-          '/clusterrush.html',
-          '/colormatch.html',
-          '/drifthunters.html',
-          '/ducklife.html',
-          '/ducklife2.html',
-          '/ducklife3.html',
-          '/ducklife4.html',
-          '/edgenotfound.html',
-          '/letssurf.html',
-          '/mergeroundracers.html',
-          '/monkeymart.html',
-          '/tanukisunset.html',
-          '/tombofthemask.html',
-          '/towermaster.html',
-          '/particleclicker.html',
-          '/learntofly.html',
-          '/learntofly2.html',
-          '/run3.html',
+<script>
+  function openAppsPage() {
+      window.location.href = 'apps.html';
+  }
+</script>
 
-      ];
-
-      function randomGame() {
-          const randomIndex = Math.floor(Math.random() * gameUrls.length);
-          window.location.href = gameUrls[randomIndex];
-      }
-    </script>
