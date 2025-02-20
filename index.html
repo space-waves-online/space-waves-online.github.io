@@ -757,41 +757,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Student Tip</title>
   <style>
-    /* Page Reset & Basic Body Styling */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    /* Page Background */
     body {
       font-family: Arial, sans-serif;
-      background-color: #f3f3f3;  /* Light gray behind your card */
+      margin: 0;
+      padding: 0;
+      /* Light gray background for the entire page */
+      background-color: #f3f3f3;
       font-size: 14px;
     }
 
-    /* Main Card Container */
+    /* Main Container (white box) */
     .container {
       max-width: 500px;
-      margin: 30px auto 0;      /* 30px from top, 0 bottom margin so it meets the footer */
-      padding: 10px;
+      margin: 30px auto 0; /* 30px from top, 0 from bottom to align with footer */
+      padding: 20px;
       background-color: #fff;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      /* Rounded top corners only */
+      border-radius: 10px 10px 0 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    /* Student Tip Section */
-    .tip {
-      text-align: center;
-      margin-bottom: 10px;
-    }
+    /* Tip Section */
     .tip-text {
       font-size: 14px;
       color: #333;
       line-height: 1.4;
+      text-align: center;
+      margin-bottom: 10px;
     }
     .tip-img {
       width: 30px;
@@ -799,40 +795,36 @@
       vertical-align: middle;
     }
 
-    /* Footer Section as a Matching "Card" */
+    /* Footer Section (matching container width) */
     footer {
       max-width: 500px;
-      margin: 0 auto 30px;       /* 30px gap at bottom of page */
-      background-color: #2c3e50; /* Dark bluish-gray */
+      margin: 0 auto 30px; /* No top margin so it sits flush under container */
+      background-color: #2c3e50;
       color: #fff;
       text-align: center;
       padding: 20px;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
+      /* Rounded bottom corners only */
+      border-radius: 0 0 10px 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
+    /* Footer inner text & links */
     .bottomFoot {
       font-size: 14px;
-      margin-bottom: 5px;
-    }
-
-    /* Footer Links */
-    .footer-links {
-      margin-top: 5px;
+      margin-bottom: 8px;
     }
     .footer-links a {
       color: #fff;
       text-decoration: none;
-      margin: 0 5px;
-      transition: color 0.3s ease;
+      margin: 0 8px;
+      font-weight: 500;
+      transition: color 0.3s;
     }
     .footer-links a:hover {
       color: #3498db;
     }
-
-    /* Hit Counter */
     .hit-counter {
-      margin-top: 10px;
+      margin-top: 8px;
     }
     .hit-counter img {
       width: 80px;
@@ -842,19 +834,17 @@
 </head>
 <body>
 
-  <!-- Main Content Card -->
+  <!-- Main Content Container -->
   <div class="container">
     <!-- Student Tip Section -->
-    <div class="tip">
-      <div class="tip-text">
-        🚀 Attention, Students! Activate School Panic Mode with this button
-        <img class="tip-img" src="http://zachattack.oyosite.com/totallyscience/kissclipart-tilde-key-clipart-computer-keyboard-tilda-clip-art-72f644fb9dccbc89.png" alt="Tilde key"> 
-        when the teacher is near! 📚✨ It instantly transforms into a study screen!
-      </div>
+    <div class="tip-text">
+      🚀 Attention, Students! Activate School Panic Mode with this button
+      <img class="tip-img" src="http://zachattack.oyosite.com/totallyscience/kissclipart-tilde-key-clipart-computer-keyboard-tilda-clip-art-72f644fb9dccbc89.png" alt="Tilde key"> 
+      when the teacher is near! 📚✨ It instantly transforms into a study screen!
     </div>
   </div>
 
-  <!-- Footer (matching card bottom) -->
+  <!-- Footer Section -->
   <footer>
     <div class="bottomFoot">
       2024 Evan Club LLC. An Evan Yadegari Production&trade;
@@ -865,8 +855,8 @@
     </div>
     <div class="hit-counter">
       <a href="https://www.free-website-hit-counter.com" target="_blank">
-        <img src='https://www.free-website-hit-counter.com/c.php?d=9&id=165318&s=17'
-             alt='Free Website Hit Counter'>
+        <img src="https://www.free-website-hit-counter.com/c.php?d=9&id=165318&s=17"
+             border="0" alt="Free Website Hit Counter">
       </a>
     </div>
   </footer>
@@ -882,6 +872,7 @@
 
 </body>
 </html>
+
 
 
 
