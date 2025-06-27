@@ -14,7 +14,6 @@ html, body {
 body {
   line-height: 1.6;
   /* Background image fixes */
-  background-image: url('webbackground.png');
   background-repeat: no-repeat;       /* Do not tile the image */
   background-position: center bottom; /* Position image at the bottom center */
   background-size: cover;            /* Scale the image to cover the entire screen */
