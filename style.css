@@ -91,20 +91,7 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.search-bar button {
-  padding: 10px 15px; /* Reduced padding */
-  cursor: pointer;
-  background: #3f51b5; /* Indigo */
-  color: #fff;
-  border: 2px solid #3f51b5; /* Indigo */
-  border-radius: 0 20px 20px 0;
-  border-left: none;
-  font-size: 14px;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .search-bar button:hover {
   background-color: #303f9f; /* Darker Indigo on Hover */
