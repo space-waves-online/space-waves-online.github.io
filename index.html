@@ -228,13 +228,7 @@
   <button class="random-game" onclick="randomGame()">Random Game</button>
   <div class="welcome-text">Spacebar Clicker</div>
 
-  <!-- Search Bar -->
-  <div class="search-bar">
-    <input type="text" id="searchInput" placeholder="Search for a game..." onkeypress="handleKeyPress(event)">
-    <button onclick="searchGames()"><i class="fas fa-search"></i></button>
-  </div>
-
-  <!-- Game Iframe Section -->
+    <!-- Game Iframe Section -->
   <div class="content">
     <iframe id="gameFrame"
       src="https://sciencemathedu.github.io/space/"
@@ -242,6 +236,14 @@
       onload="focusGame()"></iframe>
     <button class="fullscreen-button" onclick="toggleFullScreen()">Fullscreen</button>
   </div>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search for a game..." onkeypress="handleKeyPress(event)">
+    <button onclick="searchGames()"><i class="fas fa-search"></i></button>
+  </div>
+
+
 
   <!-- All Games List -->
   <div class="flex-container">
