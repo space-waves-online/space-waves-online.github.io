@@ -126,22 +126,6 @@ h1 {
   flex-wrap: wrap;
 }
 
-/* Flex item styling */
-.flex-item {
-  margin: 20px;
-  width: 200px;
-  height: 200px;
-  background-color: #3498db; /* Bright blue background for flex items */
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.flex-item:hover {
-  transform: scale(1.1); /* Slightly expand on hover */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
-}
 
 body {
   font-size: 16px;
